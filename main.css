@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  background-color: #f5f5f5;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 12px;
+}
+
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #141414;
+  padding: 15px;
+  border-radius: 5px;
+}
+header nav ul li a:hover{
+  background-color: #fff;
+  transition: 0.3;
+  
+}
+
+header .container h2{
+  font-weight: 700;
+  font-size: 26px;
+  margin: auto 0;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .menu {
+  padding:16px;
+}
+
+.imagem {
+  position: relative;
+  max-width : auto;
+  height: 600px;
+  background-image: url('img/tim-trad-BYPMtjYMEyk-unsplash.jpg');
+}
+
+.imagem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 14, 14, 0.4); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f5;
+  font-size: 98px;
+  z-index: 2;
+}
+section .imagem a {
+  font-size: 18px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  color: #f5f5f5;
+  transform: translate(-50%, -50%);
+  background-color: #ff1d52;
+  border-radius: 20px;
+  padding: 10px 20px;
+  z-index: 2;
+  text-decoration: none;
+}
+.btn {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 2;
+} 
+
+.btn:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #7c7c7c; 
+  z-index: 2;
+}
+
+
+.container h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+#roteiros p{
+  font-size: 18px;
+  text-align: center;
+  font-style: oblique;
+  color: #707070;
+}
+
+.roteiros {
+  max-width: 800px;
+  margin: auto;
+}
+
+.roteiros img{
+  margin-top: 40px;
+  margin-right: 20px;
+  max-width: 250px;
+  border-radius: 5%;
+}
+
+.roteiros .legenda{
+  margin-top: 10px;
+  font-weight: 700;
+}
+.roteiros .legenda .date {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ff1d52;
+}
+
+.container .roteiros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roteiros2 img{
+  margin-top: 20px;
+}
+
+#contact {
+  margin-top: 30px;
+}
+.contato {
+    position: relative;
+    max-width : auto;
+    height: 300px;
+    background-image: url('img/contato.jpg');
+}
+
+.contato span{
+  color: #ff1d52;
+}
+
+.contato h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f5;
+  font-size: 98px;
+  z-index: 2; 
+}
+
+#contact .formas-contato {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+#contact .formas-contato div p {
+  font-size: 16px;
+  color: #141414;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#contact .formas-contato span {
+  color: #141414;
+}
+
+#contact .redes-sociais a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+#contact .formulario {
+  text-align: center;
+  max-width: 800px;
+  margin-top: 40px;
+}
+#contact .formulario input,
+textarea,
+button{
+  font-size: 18px;
+  color: #141414;
+  padding: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+}
+
+#contact .formulario form h5{
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#contact .formulario form textarea{
+  resize: none;
+  height: 200px;
+  width: 500px;
+}
+
+.formulario form input:focus, textarea:focus {
+  outline-color: #535353;
+}
+
+.formulario form button{
+  cursor: pointer;
+  background-color: #141414;
+  color: #f5f5f5;
+  padding: 10px 25px;
+
+}
+.formulario form button:hover{
+  background-color: #535353;
+}
+footer {
+  background-color: #f5f5f5;
+  margin-top: 60px;
+  padding: 30px 0;
+}
+footer .container p {
+  text-align: center;
+  font-size: 16px;
+  font-style: oblique;
+  color: #141414;
+}
